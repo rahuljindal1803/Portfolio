@@ -131,7 +131,7 @@ header nav__links {
 }
 .close_btn:hover {
   background-color: #433d79;
-  scale: 0.95;
+  transform: scale(0.95);
 }
 
 .signup-form form button {
