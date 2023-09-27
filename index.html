@@ -9,44 +9,114 @@
   <body>
     <div class="container">
       <header id="header">
-        <img src="images/logo.png" alt="logo" class="logo" />
+        <a href="#home">
+          <img src="images/logo.png" alt="logo" class="logo" />
+        </a>
         <nav>
           <ul class="nav__links">
-            <li><a href="home">Home</a></li>
-            <li><a href="about">About me</a></li>
-            <li><a href="services">Services</a></li>
-            <li><a href="skills">Skills</a></li>
-            <li><a href="projects">Projects</a></li>
-            <li><a href="contact">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-        <a href="#" class="cta"
-          ><button class="btn_cta">Let's Connect</button></a
+        <a href="" class="cta"
+          ><button id="connect-btn" class="btn_cta">Let's Connect</button></a
         >
+        <div class="signup-form-container" id="signup-form-container">
+          <div class="signup-form">
+            <h2>Introduction</h2>
+            <form>
+              <input type="text" placeholder="First Name" />
+              <input type="text" placeholder="Last Name" />
+              <input type="email" placeholder="Email" />
+              <input type="numeric" placeholder="Mobile Number" />
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                maxlength="150"
+                placeholder="Feel free to leave  a message..."
+                style="
+                  margin: 0px 30px 0px 30px;
+                  height: 0.5%;
+                  width: 80%;
+                  border: 2px solid rgba(20, 19, 19, 0.801);
+                "
+              ></textarea>
+
+              <div class="button">
+                <button class="connect_btn" type="submit">Connect</button>
+              </div>
+            </form>
+            <button id="close-button" class="close_btn">Close</button>
+          </div>
+        </div>
         <div id="menu" class="bx_menu">
           <img src="images/ham_menu.png" alt="ham_menu" />
         </div>
       </header>
-      <div class="landing__page">
-        <div class="landing__card">
-          <div class="title"></div>
-          <div class="desc"></div>
+      <section id="home" class="home">
+        <div class="first_block">
+          <div class="first_card">
+            <div class="first_content">
+              <div class="first_card_title">Front-End Developer</div>
+              <div class="first_card_desc">
+                Hi, I'm Rahul Jindal. A passionate Front-End<br />
+                Developer based in New Delhi, India
+              </div>
+              <div class="tech_icon">
+                Tech Stack:
+                <img src="images/html.ico" alt="htmlLogo" class="icons" />
+                <img src="images/css.avif" alt="cssLogo" class="icons" />
+                <img src="images/js.avif" alt="jsLogo" class="icons" />
+                <img src="images/React.avif" alt="reactLogo" class="icons" />
+                <img
+                  src="images/Bootstrap.avif"
+                  alt="bootstrapLogo"
+                  class="icons"
+                />
+                <img
+                  src="images/Tailwind.avif"
+                  alt="tailwindLogo"
+                  class="icons"
+                />
+              </div>
+            </div>
+            <img src="images/profile-pic.png" alt="" class="first_img" />
+          </div>
         </div>
-      </div>
-      <div class="second_block">
-        <div class="second_card">
-          <img src="images/sec_card_img_logo.png" alt="" class="sec_img" />
-          <div class="sec_content">
-            <div class="sec_card_title">About Me</div>
-            <div class="sec_card_desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-              veritatis vel accusamus perspiciatis, deleniti, aut iste, illum
-              cupiditate facere ducimus provident ipsum quaerat itaque
-              reiciendis dicta beatae impedit debitis necessitatibus!
+      </section>
+      <section id="about">
+        <div class="second_block">
+          <div class="second_card">
+            <img src="images/sec_card_img_logo.png" alt="" class="sec_img" />
+            <div class="sec_content">
+              <div class="sec_card_title">About Me</div>
+              <div class="sec_card_desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                veritatis vel accusamus perspiciatis, deleniti, aut iste, illum
+                cupiditate facere ducimus provident ipsum quaerat itaque
+                reiciendis dicta beatae impedit debitis necessitatibus!
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      <section id="services">
+        <div class="third_block"></div>
+      </section>
+      <section id="skills">
+        <div class="third_block"></div>
+      </section>
+      <section id="projects">
+        <div class="third_block"></div>
+      </section>
+      <section id="contact">
+        <div class="third_block"></div>
+      </section>
     </div>
     <script src="script.js"></script>
   </body>
