@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const targetElement = document.querySelector(targetId);
 
       if (targetElement) {
-        const offset = 90;
+        const offset = 80;
         const targetPosition =
           targetElement.getBoundingClientRect().top + window.scrollY - offset;
         const easing = "cubic-bezier(0.25, 0.1, 0.25, 1)";
@@ -45,4 +45,15 @@ signupButton.addEventListener("click", (e) => {
 
 closeBtn.addEventListener("click", () => {
   signupFormContainer.style.display = "none";
+});
+
+const moreButton = document.querySelector(".more");
+const fourthCard = document.querySelector(".hidden");
+const servicesContainer = document.getElementById("services");
+let isFlipped = false;
+moreButton.addEventListener("click", () => {
+  fourthCard.classList.toggle("hidden");
+  servicesContainer.classList.toggle("expanded");
+  isFlipped = !isFlipped;
+  moreButton.style.transform = isFlipped ? "rotateX(180deg)" : "rotateX(0deg)";
 });
