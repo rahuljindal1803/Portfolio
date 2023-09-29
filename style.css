@@ -362,6 +362,7 @@ header nav__links {
   align-items: center;
   justify-content: space-between;
   height: 55%;
+  background-color: transparent;
   backdrop-filter: blur(55px);
 }
 .card {
@@ -433,13 +434,118 @@ header nav__links {
   height: 1050px;
   transition: all 0.3s ease-in;
 }
+/* projects */
 
-.third_block1 {
+.project_block {
   width: 100%;
-  height: 750px;
+  height: 1450px;
+  background-color: #514c80;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inside_flex {
+  width: 90%;
+  height: 90%;
+  background-color: #514c80;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+.project_1,
+.project_2,
+.project_3 {
+  background-color: #514c80;
+
+  width: 100%;
+  height: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  position: 50%;
+  align-items: end;
+  flex-direction: column;
   background-color: #514c80;
 }
-.third_block2 {
+.info2 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  background-color: #514c80;
+}
+.project_img {
+  width: 70%;
+  height: 70%;
+  border-radius: 20px;
+  background-color: #ffffffa2;
+  backdrop-filter: blur(5px);
+  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.5);
+}
+.img_area2 {
+  width: 30%;
+}
+.project_img2 {
+  width: 45%;
+  height: 90%;
+  border-radius: 20px;
+  box-shadow: -15px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.project_title,
+.project_desc,
+.project_link {
+  height: 20%;
+  text-align: end;
+  margin-right: 50px;
+  margin-top: 10px;
+  background-color: #514c80;
+  color: white;
+}
+.project_title2,
+.project_desc2,
+.project_link2 {
+  height: 20%;
+  text-align: start;
+  margin-left: 50px;
+  margin-top: 10px;
+  background-color: #514c80;
+  color: white;
+}
+.project_title {
+  padding-top: 50px;
+  font-size: 32px;
+}
+.project_title2 {
+  padding-top: 50px;
+  font-size: 32px;
+}
+
+.gitHub_link,
+.gitHub_link a {
+  width: 100%;
+  height: 70%;
+  background-color: #514c80;
+  border: none;
+}
+.gitImage {
+  width: 80%;
+  height: 50%;
+  background-color: #514c80;
+}
+
+.award_block {
   width: 100%;
   height: 750px;
   background-color: #ffffff;
@@ -447,8 +553,8 @@ header nav__links {
 
 .third_block3 {
   width: 100%;
-  height: 750px;
-  background-color: #ffffff;
+  height: 700px;
+  background-color: #8eb1c9;
 }
 
 /* media query */
